@@ -5043,3 +5043,18 @@ footer#footer.footer-5 .sub-footer p {
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* IE10+ CSS styles go here */
 }
+
+/* Hacer que el contenedor tenga un tamaño del 100% del ancho de la pantalla */
+.image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente si es necesario */
+  padding: 20px; /* Espaciado opcional */
+}
+
+/* Hacer que la imagen sea responsiva */
+.image-container img {
+  max-width: 100%; /* La imagen nunca será más ancha que su contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
