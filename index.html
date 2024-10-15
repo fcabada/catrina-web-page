@@ -7,7 +7,7 @@
         <title>Catrinas - Mexican Grill & Bar</title>
         <meta name="keywords" content="HTML5,CSS3,HTML,Template,Themeton">
         <meta name="description"
-            content="Rozario - Restaurant & Food HTML Template">
+            content="Catrinas - Mexiczn Grill & Bar">
         <meta name="author" content="Themeton">
 
         <!-- Favicon -->
@@ -48,7 +48,7 @@
                 position: relative;
                 width: 100%; /* Ajusta al tamaño que necesites */
                 height: 400px; /* Ajusta al tamaño que necesites */
-                background-image: url('images/catrina-footer.png');
+                /*background-image: url('images/pre-footer-catrina.png');*/
                 background-size: cover;
                 background-position: center;
             }
@@ -60,12 +60,47 @@
                 left: 0;
                 right: 0;
                 bottom: 0;
-                background-color: rgba(0, 0, 0, 0.664); /* Ajusta la opacidad aquí */
+                background-color: rgba(0, 0, 0, 0.725); /* Ajusta la opacidad aquí */
             }
     
             .pv14-1 { /* Aquí puedes agregar otros estilos específicos para .pv14 */
                 padding-top: 14px;
                 padding-bottom: 14px;
+            }
+            .menu-full-bg {
+                /* Configuración de la imagen de fondo */
+                background-image: url('images/catrina-header.png');
+                background-size: cover;
+                background-position: center;
+                position: relative;
+            }
+
+            .menu-full-bg::before {
+                /* Superposición para oscurecer la imagen */
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(0, 0, 0, 0.725); /* Ajusta la opacidad aquí */
+                z-index: 0;
+            }
+
+            .topbar {
+                position: relative;
+                z-index: 2; /* Asegúrate de que el contenido del topbar esté por encima de la superposición */
+            }
+
+            /* Asegurarse de que los enlaces y el contenido estén accesibles y visibles */
+            #logo {
+                display: block;
+                background-image: url('images/logo-catrina.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 300px; /* O el tamaño que prefieras */
+                height: 100px; /* Ajusta según la altura del logo */
+                text-indent: -9999px; /* Oculta el texto si solo quieres mostrar la imagen */
             }
         </style>
 
@@ -75,19 +110,20 @@
 
         <div class="wrapper">
 
-            <header id="header" class="menu-full-bg"
-                data-bg-image="images/pages/h5-cover.jpg">
-
-                <div class="topbar">
+            <header id="header"
+                class="menu-full-bg"
+                data-bg-image="images/catrina-header.png">
+                    <div class="topbar">
                     <div class="container">
                         <div class="row">
-                            <div class="col-sm-12">
+                            <div class="col-m-12">
                                 <a href="./" id="logo" title="Catrinas"
-                                    class="logo-image" data-width="200px"
+                                    class="logo-image" data-width="300px"
                                     data-bg-image="images/logo-catrina.png">Catrinas</a>
                             </div>
                         </div>
                     </div>
+                    
                 </div>
 
                 <!-- Cover Content -->
