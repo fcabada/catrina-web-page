@@ -43,6 +43,32 @@
         <!-- Stylesheet -->
         <link rel="stylesheet" type="text/css" href="style.css">
 
+        <style>
+            .fullscreen-section-1 {
+                position: relative;
+                width: 100%; /* Ajusta al tamaño que necesites */
+                height: 400px; /* Ajusta al tamaño que necesites */
+                background-image: url('images/catrina-footer.png');
+                background-size: cover;
+                background-position: center;
+            }
+    
+            .fullscreen-section-1::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(0, 0, 0, 0.664); /* Ajusta la opacidad aquí */
+            }
+    
+            .pv14-1 { /* Aquí puedes agregar otros estilos específicos para .pv14 */
+                padding-top: 14px;
+                padding-bottom: 14px;
+            }
+        </style>
+
     </head>
 
     <body>
@@ -328,8 +354,9 @@ Our founders, inspired by their extensive travels across Mexico, envisioned a pl
                         </div>
                     </div>
 
-                    <div class="fullscreen-section pv14"
-                        data-bg-image="images/pages/bg-catrina.jpg">
+                    <div
+                        class="fullscreen-section-1 pv14-1"
+                        data-bg-image="images/catrina-footer.png">
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12 text-center">
